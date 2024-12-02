@@ -5,6 +5,7 @@ import { createPost } from "../actions/postActions";
 export default function CreatePostPage({ username }) {
     const [postForm, setPostForm] = useState({ name: username, title: "", description: "", image: "" });
 
+    
     return (
         <div>
             <h1>Create your first post on ProBlogger!</h1>
