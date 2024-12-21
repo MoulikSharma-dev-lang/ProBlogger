@@ -18,7 +18,7 @@ export default function Login() {
     }
 
     return (
-        <div>
+        <main>
             <h1>Login to create beautiful blogs!</h1>
             <br />
             <br />
@@ -44,6 +44,6 @@ export default function Login() {
                     </div>
                 </form>
             </div>
-        </div>
+        </main>
     )
 }

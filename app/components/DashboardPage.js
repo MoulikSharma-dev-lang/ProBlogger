@@ -13,7 +13,7 @@ export default function DashboardPage({ username, email }) {
     }
 
     return (
-        <div className="text-center my-3">
+        <main className="text-center my-3">
             <input type="text" name="username" className="appearance-none rounded-md relative w-[330px] px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" value={usernameState} onChange={(e) => { setUsernameState(e.target.value) }} />
             <br />
             <br />
@@ -26,6 +26,6 @@ export default function DashboardPage({ username, email }) {
                 <br />
                 <button onClick={() => { hitApi("/api/logout", "DELETE", { username: usernameState, email: emailState }); router.push("/login"); alert("You have logged out successfully!") }} className="group relative w-20 py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Logout</button>
             </div>
-        </div>
+        </main>
     )
 }
